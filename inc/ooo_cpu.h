@@ -174,6 +174,7 @@ public:
 
   // functions
   void read_from_trace(),
+      context_switch(),
       fetch_instruction(),
       decode_and_dispatch(),
       schedule_instruction(),

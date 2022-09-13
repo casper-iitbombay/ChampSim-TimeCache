@@ -10,6 +10,11 @@ void O3_CPU::initialize_core()
 {
 }
 
+void O3_CPU::context_switch()
+{
+    // Implement module 1 here
+}
+
 void O3_CPU::read_from_trace()
 {
     // actual processors do not work like this but for easier implementation,

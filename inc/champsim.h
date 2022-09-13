@@ -32,6 +32,7 @@
 #define DP(x)
 #endif
 
+#define CONTEXT_SWITCH_INTERVAL 2000000
 // CPU
 #define NUM_CPUS 1
 #define CPU_FREQ 4000

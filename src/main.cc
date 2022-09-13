@@ -846,6 +846,11 @@ int main(int argc, char **argv)
             // proceed one cycle
             current_core_cycle[i]++;
 
+            if(current_core_cycle[i] % CONTEXT_SWITCH_INTERVAL == 0){
+                // cout<<"Context switch at cycle: "<<current_core_cycle[i]<<endl;
+                ooo_cpu[i].context_switch();
+            }
+
             // cout << "Trying to process instr_id: " << ooo_cpu[i].instr_unique_id << " fetch_stall: " << +ooo_cpu[i].fetch_stall;
             // cout << " stall_cycle: " << stall_cycle[i] << " current: " << current_core_cycle[i] << endl;
 
